@@ -27,57 +27,11 @@ const SingleProduct = () => {
           </div>
         </div>
       </div>
-     <div className="card card-side bg-base-100 shadow-xl">
-        <figure>
-          <img
-            src={photo}
-            alt="Movie"
-          />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">New movie is released!</h2>
-          <p>Click the button to watch on Jetflix app.</p>
-          <div className="flex">
-            <button className="btn btn-primary mr-3">Update button</button>
-            <button className="btn btn-success">Details button</button>
-          </div>
-        </div>
-      </div>
+
+
+     
      </div>
-     <div className="flex pb-12 gap-8">
-     <div className="card card-side bg-base-100 shadow-xl">
-        <figure>
-          <img
-            src={photo}
-            alt="Movie"
-          />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">New movie is released!</h2>
-          <p>Click the button to watch on Jetflix app.</p>
-          <div className="flex">
-            <button className="btn btn-primary mr-3">Update button</button>
-            <button className="btn btn-success">Details button</button>
-          </div>
-        </div>
-      </div>
-     <div className="card card-side bg-base-100 shadow-xl">
-        <figure>
-          <img
-            src={photo}
-            alt="Movie"
-          />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">New movie is released!</h2>
-          <p>Click the button to watch on Jetflix app.</p>
-          <div className="flex">
-            <button className="btn btn-primary mr-3">Update button</button>
-            <button className="btn btn-success">Details button</button>
-          </div>
-        </div>
-      </div>
-     </div>
+     
     </div>
   );
 };
