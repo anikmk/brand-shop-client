@@ -18,13 +18,18 @@ const Login = () => {
                 const loginUser = {email,password}
                 console.log(loginUser)
                 logIn(email,password)
+               
+            
+                      
                 .then(result=> {
-                    console.log(result.user)
+                    console.log(result)
                     // navigate after login
+                    alert('succesfully login')
                     navigate(location?.state ? location.state:'/')
                 })
                 .catch(error=>{
                     console.log(error.message)
+                    alert('your password or email invalid')
                 })
     }
                 const handleGoogleLogin = () => {

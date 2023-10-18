@@ -5,16 +5,12 @@ const SingleProduct = () => {
   const {_id,photo,name,brandname,type,price,shortdescription,rating,others} = product;
   console.log(product);
 
-//   fetch(`http://localhost:5000/products?brandname=${(brandname)}`,{
-//     method:"get"
-    
+  fetch(`http://localhost:5000/products?brandname=${(brandname)}`)
+ .then(res=> res.json())
+ .then(data=> console.log(data))
 
-//   })
-//  .then(res=>res.json())
-//  .then(data=>{
-//     console.log(data)
-//  })
 
+ 
   return (
     <div>
     
@@ -36,7 +32,7 @@ const SingleProduct = () => {
             <Link to={`/details/${_id}`}>
             <button className="btn btn-primary">Details</button>
             </Link>
-            <Link to="/update">
+            <Link to={`/update/${_id}`}>
             <button className="btn btn-primary">Update</button>
             </Link>
           </div>

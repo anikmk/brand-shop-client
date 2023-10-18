@@ -27,14 +27,20 @@ const router = createBrowserRouter([
                 ,
                 loader:({params})=> fetch(`http://localhost:5000/products/${params.id}`)
             },
+            // tanim
+            // {
+            //     path:'/singleproduct',
+            //     element:<SingleProduct></SingleProduct>
+            // },
             {
                 path:'/details/:id',
                 element:<Details></Details>,
                 loader:({params})=> fetch(`http://localhost:5000/products/${params.id}`)
             },
             {
-                path:'/update',
-                element:<Update></Update>
+                path:'/update/:id',
+                element:<Update></Update>,
+                loader:({params}) => fetch(`http://localhost:5000/products/${params.id}`)
             },
             {
                 path:'/addtoproduct',
@@ -44,7 +50,9 @@ const router = createBrowserRouter([
             },
             {
                 path:'/mycart',
-                element:<MyCart></MyCart>
+                element:<PrivetRoute>
+                    <MyCart></MyCart>
+                    </PrivetRoute>
             },
             {
                 path:'/login',

@@ -19,7 +19,7 @@ const Register = () => {
         if (password.length < 6) {
             toast("Password should be at least 6 characters long.");
             return;
-        } else if (!/[@$!%*?&]/.test(password)) {
+        } else if (!/[@$!#%*?&]/.test(password)) {
             toast("Password should contain a special character.");
             return;
         } else if (!/[A-Z]/.test(password)) {

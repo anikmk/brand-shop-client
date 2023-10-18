@@ -2,6 +2,8 @@ import { useLoaderData } from "react-router-dom";
 import HomeCard from "../../Sharate/HomeCard/HomeCard";
 import HomeSlider from "../../Sharate/HomeSlider/HomeSlider";
 import WhyChoiceUs from "../../Sharate/WhyChoiceUs/WhyChoiceUs";
+import Pricing from "../../Sharate/Pricing/Pricing";
+
 
 const Home = () => {
   const products = useLoaderData();
@@ -18,6 +20,7 @@ const Home = () => {
           ))}
         </div>
       </div>
+      <Pricing></Pricing>
     </div>
   );
 };
