@@ -1,13 +1,26 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 const SingleProduct = () => {
   const product = useLoaderData();
   const {_id,photo,name,brandname,type,price,shortdescription,rating,others} = product;
   console.log(product);
+
+//   fetch(`http://localhost:5000/products?brandname=${(brandname)}`,{
+//     method:"get"
+    
+
+//   })
+//  .then(res=>res.json())
+//  .then(data=>{
+//     console.log(data)
+//  })
+
   return (
     <div>
-     <div className="flex gap-8 py-12">
-     <div className="card card-side bg-base-100 shadow-xl">
+    
+    <div>
+    <div className="flex gap-8">
+     <div className="card card-side bg-base-100 shadow-xl mt-8">
         <figure>
           <img
             src={photo}
@@ -17,20 +30,24 @@ const SingleProduct = () => {
         <div className="card-body">
           <h2 className="card-title">{name}</h2>
           <p>{brandname}</p>
-          <p>{type}</p>
           <p>{price}</p>
-          <p>{rating}</p>
-
-          <div className="flex">
-            <button className="btn btn-primary mr-3">Update button</button>
-            <button className="btn btn-success">Details button</button>
+          <p>{type}</p>
+          <div className="card-actions justify-end">
+            <Link to={`/details/${_id}`}>
+            <button className="btn btn-primary">Details</button>
+            </Link>
+            <Link to="/update">
+            <button className="btn btn-primary">Update</button>
+            </Link>
           </div>
         </div>
       </div>
-
-
      
      </div>
+    </div>
+    <div>
+
+    </div>
      
     </div>
   );

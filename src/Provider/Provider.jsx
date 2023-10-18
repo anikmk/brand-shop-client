@@ -16,14 +16,17 @@ const Provider = ({children}) => {
             
     }
     const logOut = () => {
+        setLoader(true);
         return signOut(auth)
     }
 
     const logIn = (email,password) => {
+        setLoader(true);
         return signInWithEmailAndPassword(auth,email,password)
     }
     const googleProvider = new GoogleAuthProvider()
     const loginWithGoogle = () => {
+        setLoader(true);
         return signInWithPopup(auth,googleProvider)
     }
 
@@ -31,6 +34,7 @@ const Provider = ({children}) => {
         const unSubscrive  = onAuthStateChanged(auth,currentUser => {
             console.log('current user',currentUser);
             setUser(currentUser);
+            setLoader(false);
         })
         return () => {
             unSubscrive();

@@ -6,6 +6,9 @@ import MyCart from "../Components/MyCart/MyCart";
 import SingleProduct from "../Components/SingleProduct/SingleProduct";
 import Login from "../Components/Login/Login";
 import Register from "../Components/Register/Register";
+import PrivetRoute from "./PrivetRoute";
+import Details from "../Components/SingleProduct/Details";
+import Update from "../Components/SingleProduct/Update";
 
 const router = createBrowserRouter([
     {
@@ -19,12 +22,25 @@ const router = createBrowserRouter([
             },
             {
                 path:'/singleproduct/:id',
-                element:<SingleProduct></SingleProduct>,
+                element:
+                <SingleProduct></SingleProduct>
+                ,
                 loader:({params})=> fetch(`http://localhost:5000/products/${params.id}`)
             },
             {
+                path:'/details/:id',
+                element:<Details></Details>,
+                loader:({params})=> fetch(`http://localhost:5000/products/${params.id}`)
+            },
+            {
+                path:'/update',
+                element:<Update></Update>
+            },
+            {
                 path:'/addtoproduct',
-                element:<AddToProduct></AddToProduct>
+                element:<PrivetRoute>
+                <AddToProduct></AddToProduct>
+                </PrivetRoute>
             },
             {
                 path:'/mycart',

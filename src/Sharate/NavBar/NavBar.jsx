@@ -19,7 +19,7 @@ const NavBar = () => {
       .catch()
     }
     return (
-        <div className="bg-red-400 py-2 border-b-4 border-indigo-500">
+        <div className="bg-primary py-2 border-b-4 border-indigo-500">
             <div className="navbar w-11/12 mx-auto">
   <div className="navbar-start">
     <div className="dropdown">
@@ -31,7 +31,7 @@ const NavBar = () => {
 
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">Automotive</a>
+    <a className="btn btn-ghost text-white normal-case text-xl">Automotive</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 text-white text-[18px]">
