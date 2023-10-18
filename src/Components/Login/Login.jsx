@@ -1,7 +1,36 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Provider/Provider";
 
 
 const Login = () => {
+    const {logIn,loginWithGoogle} = useContext(AuthContext)
+
+
+    const handleLogin = (event) => {
+                event.preventDefault();
+                const form = event.target;
+                const email = form.email.value;
+                const password = form.password.value;
+                const loginUser = {email,password}
+                console.log(loginUser)
+                logIn(email,password)
+                .then(result=> {
+                    console.log(result.user)
+                })
+                .catch(error=>{
+                    console.log(error.message)
+                })
+    }
+                const handleGoogleLogin = () => {
+                    loginWithGoogle()
+                    .then(result=>{
+                        console.log(result.user)
+                    })
+                    .catch(error=>{
+                        console.log(error.message)
+                    })
+                }
     return (
         <div>
             <div className="hero min-h-screen bg-base-200 ">
@@ -11,22 +40,22 @@ const Login = () => {
       
     </div>
     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 py-3">
-      <form className="card-body">
+      <form onSubmit={handleLogin} className="card-body">
         <div className="form-control">
           <label className="label">
             <span className="label-text">Email</span>
           </label>
-          <input type="email" placeholder="email" className="input input-bordered" required />
+          <input type="email" name="email" placeholder="email" className="input input-bordered" required />
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Password</span>
           </label>
-          <input type="password" placeholder="password" className="input input-bordered" required />
+          <input type="password" name="password" placeholder="password" className="input input-bordered" required />
         </div>
         <div className="form-control mt-6">
           <button className="btn btn-primary">Login</button>
-          <button className="btn btn-outline mt-4">Google</button>
+          <button onClick={handleGoogleLogin} className="btn btn-outline mt-4">Google</button>
         </div>
       </form>
       <p className="text-sm text-center">
@@ -34,7 +63,7 @@ const Login = () => {
       </p>
     </div>
   </div>
-</div>
+            </div>
         </div>
     );
 };
