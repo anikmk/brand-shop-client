@@ -17,7 +17,7 @@ const AddToProduct = () => {
 
         const newUser = {photo,name,brandname,type,price,shortdescription,rating,others}
         console.log(newUser)
-        fetch('http://localhost:5000/products',{
+        fetch('https://automotive-server-site-2c1suavx6-anik-mks-projects.vercel.app/products',{
             method:"POST",
             headers:{
                 "content-type": "application/json"

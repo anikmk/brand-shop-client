@@ -5,7 +5,7 @@ const SingleProduct = () => {
   const {_id,photo,name,brandname,type,price,shortdescription,rating,others} = product;
   console.log(product);
 
-  fetch(`http://localhost:5000/products?brandname=${(brandname)}`)
+  fetch(`https://automotive-server-site-2c1suavx6-anik-mks-projects.vercel.app/products?brandname=${(brandname)}`)
  .then(res=> res.json())
  .then(data=> console.log(data))
 

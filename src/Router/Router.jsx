@@ -18,14 +18,14 @@ const router = createBrowserRouter([
             {
                 path:'/',
                 element:<Home></Home>,
-                loader:() => fetch('http://localhost:5000/products')
+                loader:() => fetch('https://automotive-server-site-2c1suavx6-anik-mks-projects.vercel.app/products')
             },
             {
                 path:'/singleproduct/:id',
                 element:
                 <SingleProduct></SingleProduct>
                 ,
-                loader:({params})=> fetch(`http://localhost:5000/products/${params.id}`)
+                loader:({params})=> fetch(`https://automotive-server-site-2c1suavx6-anik-mks-projects.vercel.app/products/${params.id}`)
             },
             // tanim
             // {
@@ -35,12 +35,12 @@ const router = createBrowserRouter([
             {
                 path:'/details/:id',
                 element:<Details></Details>,
-                loader:({params})=> fetch(`http://localhost:5000/products/${params.id}`)
+                loader:({params})=> fetch(`https://automotive-server-site-2c1suavx6-anik-mks-projects.vercel.app/products/${params.id}`)
             },
             {
                 path:'/update/:id',
                 element:<Update></Update>,
-                loader:({params}) => fetch(`http://localhost:5000/products/${params.id}`)
+                loader:({params}) => fetch(`https://automotive-server-site-2c1suavx6-anik-mks-projects.vercel.app/products/${params.id}`)
             },
             {
                 path:'/addtoproduct',
