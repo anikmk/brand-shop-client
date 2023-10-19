@@ -5,7 +5,7 @@ import img3 from '../../assets/image/Pricing-table-img-03.png'
 
 const Pricing = () => {
     return (
-        <div className='bg-[#052046] p-20'>
+        <div className='bg-[#052046] p-8 md:p-20'>
             
 
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10'>

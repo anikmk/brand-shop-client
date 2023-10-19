@@ -5,17 +5,17 @@ const HomeSlider = () => {
         className="hero min-h-screen"
         style={{
           backgroundImage:
-            "url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)",
+            "url(https://i.ibb.co/wQPWfBd/banner1.jpg)",
+            backgroundSize:"cover",
+            backgroundPosition:"center",
         }}
       >
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md">
+          <div className="max-w-lg">
             <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
             <p className="mb-5">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+            Welcome to [AUTOMOTIVE], your premier destination for finding the perfect car that matches your style and needs. We offer a vast selection of top-quality vehicles from prestigious brands like BMW, Maserati, Mercedes-Benz, and <span className="text-primary font-bold">more..</span>
             </p>
             <button className="btn btn-primary">Get Started</button>
           </div>

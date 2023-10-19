@@ -56,7 +56,7 @@ const Update = () => {
     }
     return (
         <div>
-            <div className="bg-red-200 p-24">
+            <div className="bg-red-200 p-8 md:p-24">
         <div className="text-center md:px-12">
         <h2 className="md:text-4xl pb-5 font-bold border border-b-black">AutoMotive Enthusiast Data Collection</h2>
         <p className="pb-8 mt-3">Welcome to our Car Enthusiast Data Collection! We value your input and would like to learn more about your automotive interests. Please take a moment to fill out this brief survey, and help us tailor our website content to your preferences. Your feedback is essential to enhancing your experience on our platform. Thank you for participating!</p>
@@ -88,7 +88,7 @@ const Update = () => {
             name="name"
             type="text"
             placeholder="Name..."
-            className="input input-bordered w-full"
+            className="input input-bordered w-full border"
           />
         </label>
       </div>
