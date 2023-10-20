@@ -34,7 +34,9 @@ const router = createBrowserRouter([
             // },
             {
                 path:'/details/:id',
-                element:<Details></Details>,
+                element:<PrivetRoute>
+                    <Details></Details>
+                </PrivetRoute>,
                 loader:({params})=> fetch(`https://automotive-server-site-2c1suavx6-anik-mks-projects.vercel.app/products/${params.id}`)
             },
             {
@@ -52,7 +54,8 @@ const router = createBrowserRouter([
                 path:'/mycart',
                 element:<PrivetRoute>
                     <MyCart></MyCart>
-                    </PrivetRoute>
+                    </PrivetRoute>,
+                    loader:()=>fetch('http://localhost:5000/update')
             },
             {
                 path:'/login',

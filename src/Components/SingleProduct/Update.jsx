@@ -185,7 +185,7 @@ const Update = () => {
       </div>
         <input className="btn btn-warning mt-5 btn-block" type="submit"  value="ADD TO CART" />
       </form>
-    </div>
+            </div>
         </div>
     );
 };
