@@ -1,11 +1,28 @@
+import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
-
+import { AiTwotoneDelete,} from "react-icons/ai";
 
 const MyCart = () => {
     const userInfo = useLoaderData()
     
     // const {_id,photo,name,brandname,type,price,shortdescription,rating,others} = userInfo;
     console.log(userInfo)
+    const [users,setLoaderUser] = useState(userInfo)
+    const handleDelete = (id) => {
+        // confirm delete
+        fetch(`http://localhost:5000/update${id}`,{
+            method:"DELETE"
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            if(data.deletedCount > 1){
+                console.log("deleted    ")
+                const remainig = users.filter(user => user._id !== id)
+                setLoaderUser(remainig)
+            }
+        })
+        console.log(id)
+    }
 
     return (
         <div className="w-3/4 mx-auto py-24">
@@ -28,13 +45,14 @@ const MyCart = () => {
       
       
       {
-        userInfo.map(user=>
+        users.map(user=>
         <tr className="hover" key={user._key}>
           <th>3</th>
           <td>{user.brandname}</td>
           <td>{user.name}</td>
           <td>{user.type}</td>
           <td>{user.price}</td>
+          <td><button onClick={()=>handleDelete(user._id)} className="btn"><AiTwotoneDelete></AiTwotoneDelete></button></td>
         </tr>)
       }
     </tbody>

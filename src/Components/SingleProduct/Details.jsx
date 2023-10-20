@@ -81,10 +81,10 @@ const Details = () => {
 
 <div className="hero py-14 bg-base-200">
   <div className="hero-content flex-col lg:flex-row-reverse">
-    <img src={photo} className="max-w-sm rounded-lg shadow-2xl" />
+    <img src={photo} width={"360px"} className=" rounded-lg shadow-2xl" />
     <div>
-      <h1 className="text-5xl font-bold">tailored to a car selling platform!</h1>
-      <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <h1 className="md:text-5xl text-xl font-bold">tailored to a car selling platform!</h1>
+      <p className="py-6 mx-auto">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
       <div className="flex justify-around pb-6">
       <ul>
         <li>1. Competitive Pricing</li>
@@ -237,7 +237,7 @@ const Details = () => {
 
 {/*  */}
 
-<div className="bg-white pt-12">
+<div className="bg-white py-14">
             <div className="w-11/12 md:w-2/3 mx-auto">
                 <div className="content text-center ">
                     <h1 className="text-xl mb-5 md:text-4xl">WHY CHOOSE US?</h1>

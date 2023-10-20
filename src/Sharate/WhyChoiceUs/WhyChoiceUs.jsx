@@ -18,12 +18,12 @@ const WhyChoiceUs = () => {
                     <div className='bg-[#052046] p-10 rounded text-white mb-3 md:mb-0 '>
                     <FaCarCrash className='mx-auto text-5xl mb-3'></FaCarCrash>
                     <h3 className='text-xl mb-2 font-semibold'>Vehicles Rental Service</h3>
-                    <p className='text-sm'>We buy and sale barand new car and also used car of any brand</p>
+                    <p className='text-sm'>Offer a diverse selection of vehicles, including cars sports cars, or electric vehicles.</p>
                     </div>
                     <div className='bg-[#052046] p-10 rounded text-white mb-3 md:mb-0 '>
                     <FaRecycle className='mx-auto text-5xl mb-3'></FaRecycle>
                     <h3 className='text-xl mb-2 font-semibold'>Vehicles Servicing</h3>
-                    <p className='text-sm'>We buy and sale barand new car and also used car of any brand</p>
+                    <p className='text-sm'>Define the range of services you will provide, including routine maintenance, repair, and more...</p>
                     </div>
 
                 </div>

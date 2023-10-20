@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/Provider";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Login = () => {
@@ -24,12 +26,12 @@ const Login = () => {
                 .then(result=> {
                     console.log(result)
                     // navigate after login
-                    alert('succesfully login')
+                    toast('succeccfully login')
                     navigate(location?.state ? location.state:'/')
                 })
                 .catch(error=>{
                     console.log(error.message)
-                    alert('your password or email invalid')
+                    toast('your password or email invalid')
                 })
     }
                 const handleGoogleLogin = () => {
@@ -74,6 +76,7 @@ const Login = () => {
     </div>
   </div>
             </div>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
       </nav> 
       <aside>
-        <p>Copyright © 2023 - All right reserved by <span className="text-[#5e8d25] text-base font-medium ">EventPlaza</span></p>
+        <p>Copyright © 2023 - All right reserved by <span className="text-[#5e8d25] text-base font-medium ">AutoMotive</span></p>
       </aside>
     </footer>
         </div>
