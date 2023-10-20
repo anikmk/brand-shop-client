@@ -118,7 +118,7 @@ const Details = () => {
         </label>
         <label className="input-group">
           <input
-          defaultValue={photo}
+         
             name="photo"
             type="text"
             placeholder="Photo url..."
@@ -132,7 +132,7 @@ const Details = () => {
         </label>
         <label className="input-group">
           <input
-          defaultValue={name}
+          
             name="name"
             type="text"
             placeholder="Name..."
@@ -148,7 +148,7 @@ const Details = () => {
         </label>
         <label className="input-group">
           <input
-            defaultValue={brandname}
+           
             name="brandname"
             type="text"
             placeholder="Brand Name..."
@@ -162,7 +162,7 @@ const Details = () => {
         </label>
         <label className="input-group">
           <input
-            defaultValue={type}
+            
             name="type"
             type="text"
             placeholder="Type..."
@@ -178,7 +178,7 @@ const Details = () => {
         </label>
         <label className="input-group">
           <input
-            defaultValue={price}
+           
             name="price"
             type="text"
             placeholder="Price..."
@@ -192,7 +192,7 @@ const Details = () => {
         </label>
         <label className="input-group">
           <input
-          defaultValue={shortdescription}
+         
             name="shortdescription"
             type="text"
             placeholder="Short description..."
@@ -208,7 +208,7 @@ const Details = () => {
         </label>
         <label className="input-group">
           <input
-          defaultValue={rating}
+          
             name="rating"
             type="text"
             placeholder="Rating..."
@@ -222,7 +222,6 @@ const Details = () => {
         </label>
         <label className="input-group">
           <input
-            defaultValue={others}
             name="others"
             type="text"
             placeholder="Others..."

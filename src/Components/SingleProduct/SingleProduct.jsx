@@ -52,7 +52,7 @@ const SingleProduct = () => {
             </Link>
           </div> */}
 
-<div className="card w-96 bg-base-100 shadow-xl">
+<div className="card md:w-96 mx-auto bg-base-100 shadow-xl">
   <figure><img src={photo} alt="Shoes" /></figure>
   <div className="card-body">
     <h2 className="card-title">
@@ -84,6 +84,54 @@ const SingleProduct = () => {
     </div>
   </div>
 </div>
+     
+
+
+        <div className="md:flex py-20 w-3/4 mx-auto justify-between gap-7">
+        <div className="card mb-6 md:mb-0 bg-base-100 shadow-xl">
+  <figure><img src={slider1} alt="Shoes" /></figure>
+  <div className="card-body">
+    <h2 className="card-title">
+      Toyota
+      <div className="badge badge-secondary">NEW</div>
+    </h2>
+    <p>Exciting news! The Ford will soon have an updated version?</p>
+    <div className="card-actions justify-end">
+      <div className="badge badge-outline">Fashion</div> 
+      <div className="badge badge-outline">Products</div>
+    </div>
+  </div>
+</div>
+<div className="card mb-6 md:mb-0 bg-base-100 shadow-xl">
+  <figure><img src={slider2}alt="Shoes" /></figure>
+  <div className="card-body">
+    <h2 className="card-title">
+      Honda!
+      <div className="badge badge-secondary">NEW</div>
+    </h2>
+    <p>Limited-time offer: Get 20% off the Car for a limited period. Don not miss this opportunity?</p>
+    <div className="card-actions justify-end">
+      <div className="badge badge-outline">Fashion</div> 
+      <div className="badge badge-outline">Products</div>
+    </div>
+  </div>
+</div>
+<div className="card bg-base-100 shadow-xl">
+  <figure><img src={slider3} alt="Shoes" /></figure>
+  <div className="card-body">
+    <h2 className="card-title">
+      Bmw!
+      <div className="badge badge-secondary">NEW</div>
+    </h2>
+    <p>The Car is one of our best-selling cars, thanks to its exceptional performance,?</p>
+    <div className="card-actions justify-end">
+      <div className="badge badge-outline">Fashion</div> 
+      <div className="badge badge-outline">Products</div>
+    </div>
+  </div>
+</div>
+        </div>
+
      
     </div>
   );

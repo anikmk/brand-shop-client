@@ -10,7 +10,7 @@ const MyCart = () => {
     const [users,setLoaderUser] = useState(userInfo)
     const handleDelete = (id) => {
         // confirm delete
-        fetch(`http://localhost:5000/update${id}`,{
+        fetch(`https://automotive-server-site-kaeoyxuxx-anik-mks-projects.vercel.app/update${id}`,{
             method:"DELETE"
         })
         .then(res=>res.json())
