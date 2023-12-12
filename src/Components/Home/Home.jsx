@@ -3,6 +3,8 @@ import HomeCard from "../../Sharate/HomeCard/HomeCard";
 import HomeSlider from "../../Sharate/HomeSlider/HomeSlider";
 import WhyChoiceUs from "../../Sharate/WhyChoiceUs/WhyChoiceUs";
 import Pricing from "../../Sharate/Pricing/Pricing";
+// import Reviews from "./Reviews";
+
 
 
 const Home = () => {
@@ -21,6 +23,8 @@ const Home = () => {
     </div>
   </div>
   <Pricing></Pricing>
+  <br />
+  {/* <Reviews></Reviews> */}
 </div>
 
   );
