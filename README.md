@@ -6,6 +6,8 @@ Welcome to the client-side of the Cars4You Automotive Website project. This READ
 
 Client-Side Live Link: https://automotive-10.web.app/singleproduct/65318a4146776631b7ad75a4
 
+## Project Selling line:
+- cars for customers. We're revolutionizing car ownership and maintenance, aiming to provide an enriching user experience.
 
 
 - User-Friendly Interface: We've created a visually appealing and easy-to-navigate user interface. Users can effortlessly explore various sections of the website, including services, car listings, and more. The design is responsive, ensuring a seamless experience across different devices.
